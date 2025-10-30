@@ -1,12 +1,3 @@
-// --------------------------------------------
-// Hangman Game (Flutter Version)
-// Author: Het Patel
-// Date: October 2025
-// --------------------------------------------
-// This Hangman game is fully written by me.
-// Basic logic inspired by classic Hangman rules.
-// --------------------------------------------
-
 import 'dart:math';
 import 'package:flutter/material.dart';
 
@@ -92,12 +83,12 @@ class _HangmanHomeState extends State<HangmanHome> {
       // Check for win
       if (!currentWordDisplay.contains("_")) {
         gameOver = true;
-        resultMessage = "🎉 You WON!";
+        resultMessage = "You WON!";
       }
       // Check for loss
       else if (wrongCount >= maxWrong) {
         gameOver = true;
-        resultMessage = "😢 You LOST! The word was $currentWord";
+        resultMessage = "You LOST! The word was $currentWord";
       }
     });
   }
